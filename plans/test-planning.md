@@ -18,8 +18,8 @@ We will follow the testing pyramid to optimize execution time and coverage:
 - **Key Tests:**
     - `POST /api/v1/titles`: Validate creation with valid data and failure with invalid data.
     - `GET /api/v1/titles/{id}`: Validate object return and 404 error.
-    - `DELETE /api/v1/titles/{id}`: Validate if the record is removed from SQLite.
-    - **Unit:** Validate calculations or formatting within entities (if any).
+    - `DELETE /api/v1/titles/{id}`: Validate if the record is removed via raw SQL/Repository.
+    - **Unit:** Validate SQL query strings or mapping logic within repositories.
 
 ## 🟡 Phase 2: Frontend (Components & UI)
 **Goal:** Ensure the interface behaves as expected.
