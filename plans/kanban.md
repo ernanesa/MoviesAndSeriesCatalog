@@ -7,7 +7,7 @@ Welcome to your development dashboard. When finishing a card, mark the box with 
 ## 🔴 Phase 1: Foundation & Setup (Critical Priority)
 The base of everything. Without this, nothing runs.
 
-- [ ] **Card 1: Backend Initialization**
+- [x] **Card 1: Backend Initialization**
   - *Goal:* Create the project Solution and initialize the Minimal Web API with .NET 10.
   - *Acceptance Criteria:* Structured solution and Swagger/OpenAPI responding locally.
 
@@ -15,9 +15,9 @@ The base of everything. Without this, nothing runs.
   - *Goal:* Create the project using Vite + React 19 + TypeScript 6.
   - *Acceptance Criteria:* Frontend project rendering the Vite home page on the local port.
 
-- [ ] **Card 3: Entity Framework Core Setup**
-  - *Goal:* Install EF Core 10 packages and configure a local relational database (SQLite).
-  - *Acceptance Criteria:* Packages installed in `.csproj` without compilation errors.
+- [ ] **Card 3: Dapper & SQLite Setup**
+  - *Goal:* Install Dapper packages and configure the SQLite connection factory.
+  - *Acceptance Criteria:* Database connection service registered in DI and packages installed.
 
 ---
 
@@ -28,9 +28,9 @@ Business rules and table structure.
   - *Goal:* Create models in C# 14 (Titles and Genres).
   - *Acceptance Criteria:* Classes created, using *Primary Constructors* where it makes sense.
 
-- [ ] **Card 5: DbContext and First Migration**
-  - *Goal:* Configure `DbContext` and create tables in the database.
-  - *Acceptance Criteria:* Physical database generated with corresponding tables.
+- [ ] **Card 5: Database Schema & Seed**
+  - *Goal:* Create the physical SQLite database and run a SQL script to initialize tables.
+  - *Acceptance Criteria:* Database created with `Titles` and `Genres` tables via raw SQL.
 
 ---
 

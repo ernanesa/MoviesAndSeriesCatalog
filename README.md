@@ -2,80 +2,94 @@
 
 ![.NET Version](https://img.shields.io/badge/.NET-10-512BD4?style=for-the-badge&logo=dotnet)
 ![React Version](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+![Dapper](https://img.shields.io/badge/Dapper-Micro--ORM-blue?style=for-the-badge)
+![Aspire](https://img.shields.io/badge/.NET%20Aspire-Cloud--Native-green?style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?style=for-the-badge&logo=typescript)
 
-**Movies And Series Catalog** is a modern Fullstack application designed to manage your personal catalog of movies and series. With a Dark Mode interface and a high-performance API, the project offers a fluid and professional user experience.
+**Movies And Series Catalog** is a bleeding-edge Fullstack application designed to manage your personal catalog of movies and series. Built with a focus on extreme performance, native observability, and a Dark Mode interface.
 
 ---
 
-## 🚀 Features
+## 🌟 Why This Stack? (2026 Standards)
 
-- **Complete CRUD:** Title registration, listing, editing, and deletion.
+- **Extreme Performance:** By using **Dapper** over traditional ORMs and optimizing for **Native AOT**, the backend achieves near-instant startup times and minimal memory footprint.
+- **Native Observability:** Integrated with **OpenTelemetry** from day one, providing distributed tracing and real-time metrics via the **.NET Aspire Dashboard**.
+- **Modern React:** Leveraging the **React 19 Compiler**, the frontend is faster than ever, with automatic optimizations that eliminate manual re-render management.
 
-- **High-Quality UX:** Use of SweetAlert2 modals for non-blocking feedback.
+---
 
-- **Responsive Design:** Adaptable grid for any screen size.
+## 🚀 Key Features
 
-- **Modern Architecture:** Backend with Minimal APIs (.NET 10), Frontend with Vite + TypeScript, and orchestration with .NET Aspire.
-- **Observability:** Native OpenTelemetry integration for distributed tracing and monitoring.
-- **Dark Theme:** Aesthetics inspired by streaming platforms like Netflix and Prime Video.
+- **⚡ High-Performance CRUD:** Lightning-fast management of your titles using raw SQL power.
+- **📊 Real-time Dashboard:** Monitor your application's health, logs, and traces through the .NET Aspire orchestrator.
+- **🎭 Premium UX:** A sleek, fluid interface with **SweetAlert2** and cinematic transitions.
+- **📱 Ultra-Responsive:** Optimized for everything from mobile devices to 4K home theater screens.
+- **🛡️ Type-Safe:** End-to-end type safety using **TypeScript 6** and **C# 14**.
 
 ---
 
 ## 🛠️ Technologies Used
 
 ### Backend
-- **C# 14 / .NET 10**
-- **Entity Framework Core 10**
-- **.NET Aspire** (Cloud-native orchestration)
-- **OpenTelemetry** (Distributed tracing and metrics)
-- **SQLite** (Lightweight and portable database)
-- **Minimal APIs** (For fast and clean endpoints)
+- **C# 14 / .NET 10** (Minimal APIs & Native AOT)
+- **Dapper** (Micro-ORM for raw SQL performance)
+- **.NET Aspire** (Cloud-native orchestration & dashboard)
+- **OpenTelemetry** (Standardized distributed tracing)
+- **SQLite** (Portable, high-performance local database)
 
 ### Frontend
-- **React 19**
-- **TypeScript 6**
-- **Vite 7** (High-performance build tool)
-- **React Router DOM** (Dynamic navigation)
-- **SweetAlert2** (Elegant visual feedback)
+- **React 19** (Vite 7 based build system)
+- **TypeScript 6** (Strict typing and modern patterns)
+- **CSS Variables** (Centralized Design System)
+- **SweetAlert2** (Non-blocking visual feedback)
 
 ---
 
-## 📦 How to Run the Project
+## 📦 How to Run
+
+The easiest way to run the entire stack (API, Client, and Dashboard) is through the **Aspire Orchestrator**.
 
 ### Prerequisites
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
-- [Node.js 26](https://nodejs.org/)
+- [Node.js 26+](https://nodejs.org/)
 
-### 1. Backend (API)
+### 1. Run Everything (Orchestrated)
+```bash
+# From the root directory
+dotnet run --project MoviesAndSeriesCatalog.AppHost
+```
+This will launch the **Aspire Dashboard** at `http://localhost:18888`, where you can access the API, the Frontend, and all logs/traces.
+
+### 2. Manual Development
+If you prefer running them separately:
+
+**Backend:**
 ```bash
 cd src/MoviesAndSeriesCatalog.Api
 dotnet run
 ```
-The API will be available at: `http://localhost:5129`
 
-### 2. Frontend (Client)
+**Frontend:**
 ```bash
 cd src/MoviesAndSeriesCatalog.Client
-npm install
-npm run dev
+npm install && npm run dev
 ```
-The App will be available at: `http://localhost:5173`
 
 ---
 
 ## 🎨 Design System
 
-The project uses centralized CSS variables to facilitate maintenance and ensure visual consistency:
+The project follows a "Streaming Platform" aesthetic:
 
-- **Highlight Color:** Cyan (`#00d1b2`)
-- **Background:** Dark Gray (`#0f172a`)
-- **Cards:** Slate (`#1e293b`)
+- **Primary Color:** Cyan (`#00d1b2`) - High visibility and modern feel.
+- **Background:** Deep Navy (`#0f172a`) - Reduces eye strain and feels premium.
+- **Surface:** Slate (`#1e293b`) - Subtle contrast for cards and modals.
 
 ---
 
 ## 🛡️ License
 
-This project was developed for educational purposes as part of the **DIO - Decola Tech** challenge.
+Developed for educational purposes as part of the **DIO - Decola Tech** challenge.
 
 ---
 
