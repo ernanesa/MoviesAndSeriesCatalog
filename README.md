@@ -1,9 +1,9 @@
-# 🎬 MoviesAndSeriesCatalog - Your Home Cinema
+# 🎬 Movies And Series Catalog - Your Home Cinema
 
 ![.NET Version](https://img.shields.io/badge/.NET-10-512BD4?style=for-the-badge&logo=dotnet)
 ![React Version](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
 
-**SeriesCatalog** is a modern Fullstack application designed to manage your personal catalog of movies and series. With a Dark Mode interface and a high-performance API, the project offers a fluid and professional user experience.
+**Movies And Series Catalog** is a modern Fullstack application designed to manage your personal catalog of movies and series. With a Dark Mode interface and a high-performance API, the project offers a fluid and professional user experience.
 
 ---
 
@@ -15,8 +15,8 @@
 
 - **Responsive Design:** Adaptable grid for any screen size.
 
-- **Modern Architecture:** Backend with Minimal APIs (.NET 10) and Frontend with Vite + TypeScript.
-
+- **Modern Architecture:** Backend with Minimal APIs (.NET 10), Frontend with Vite + TypeScript, and orchestration with .NET Aspire.
+- **Observability:** Native OpenTelemetry integration for distributed tracing and monitoring.
 - **Dark Theme:** Aesthetics inspired by streaming platforms like Netflix and Prime Video.
 
 ---
@@ -24,15 +24,17 @@
 ## 🛠️ Technologies Used
 
 ### Backend
-- **C# / .NET 10**
-- **Entity Framework Core**
+- **C# 14 / .NET 10**
+- **Entity Framework Core 10**
+- **.NET Aspire** (Cloud-native orchestration)
+- **OpenTelemetry** (Distributed tracing and metrics)
 - **SQLite** (Lightweight and portable database)
 - **Minimal APIs** (For fast and clean endpoints)
 
 ### Frontend
 - **React 19**
-- **TypeScript**
-- **Vite** (High-performance build tool)
+- **TypeScript 6**
+- **Vite 7** (High-performance build tool)
 - **React Router DOM** (Dynamic navigation)
 - **SweetAlert2** (Elegant visual feedback)
 
